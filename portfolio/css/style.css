@@ -515,8 +515,8 @@ h1 {
 
 @media (max-width: 640px) {
   .skills-section {
-    margin-top: 3rem;
-    padding-top: 1.65rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
   }
 
   .skills-heading {
