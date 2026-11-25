@@ -566,11 +566,12 @@ h2 {
     max-width: 34rem;
     margin-inline: auto;
     padding-block: 0;
-    text-align: left;
+    text-align: center;
   }
 
   .eyebrow {
     max-width: 21rem;
+    margin-inline: auto;
     margin-bottom: 0.75rem;
     font-size: 0.64rem;
     letter-spacing: 0.1em;
@@ -593,7 +594,7 @@ h2 {
 
   .intro-summary {
     max-width: 32rem;
-    margin-top: 0.85rem;
+    margin: 0.85rem auto 0;
     font-size: 0.91rem;
     line-height: 1.7;
   }
