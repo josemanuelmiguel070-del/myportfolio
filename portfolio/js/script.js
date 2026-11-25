@@ -1,5 +1,5 @@
 const yearElement = document.querySelector("[data-current-year]");
-const LINKEDIN_URL = "#";
+const LINKEDIN_URL = "https://www.linkedin.com/in/jos%C3%A9-miguel-00259a423/";
 const FACEBOOK_URL = "#";
 
 if (yearElement) {
