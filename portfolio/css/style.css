@@ -416,6 +416,34 @@ h2 {
   }
 }
 
+@keyframes title-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efeito de aparecimento apenas em ecrãs grandes (PC e notebook). */
+@media (min-width: 961px) {
+  .introduction-copy {
+    animation: none;
+  }
+
+  .name {
+    display: inline-block;
+    animation: title-reveal 650ms ease-out both;
+  }
+
+  .role {
+    animation: title-reveal 650ms 180ms ease-out both;
+  }
+}
+
 @media (max-width: 960px) and (min-width: 641px) {
   .page-shell {
     width: min(100% - 4rem, 760px);
