@@ -1,6 +1,6 @@
 const yearElement = document.querySelector("[data-current-year]");
 const LINKEDIN_URL = "https://www.linkedin.com/in/jos%C3%A9-miguel-00259a423/";
-const FACEBOOK_URL = "#";
+const FACEBOOK_URL = "https://m.facebook.com/profile.php?id=61580620917176";
 
 if (yearElement) {
   yearElement.textContent = String(new Date().getFullYear());
