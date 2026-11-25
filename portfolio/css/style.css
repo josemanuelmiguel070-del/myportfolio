@@ -262,36 +262,12 @@ h1 {
 }
 
 .coming-soon {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
-  align-items: center;
-  gap: clamp(3rem, 9vw, 8rem);
-  width: 100%;
-  margin: clamp(3rem, 6vw, 4.5rem) 0 0;
-  padding-top: 1.5rem;
+  max-width: 630px;
+  margin: clamp(3.5rem, 8vw, 6rem) auto 0;
+  padding-top: 1.75rem;
   border-top: 1px solid var(--color-border);
+  text-align: center;
   animation: arrive 700ms 100ms ease-out both;
-}
-
-.coming-soon .status-label {
-  justify-self: start;
-  margin: 0;
-}
-
-.coming-soon-copy h2 {
-  margin: 0 0 0.45rem;
-  font-size: clamp(1.55rem, 2.8vw, 2rem);
-  font-weight: 400;
-  letter-spacing: -0.045em;
-  line-height: 1.15;
-}
-
-.coming-soon-copy p {
-  max-width: 38rem;
-  margin: 0;
-  color: var(--color-muted);
-  font-size: 0.92rem;
-  line-height: 1.65;
 }
 
 .status-label {
@@ -522,9 +498,8 @@ h2 {
   }
 
   .coming-soon {
-    grid-template-columns: minmax(220px, 0.82fr) minmax(0, 1.18fr);
-    gap: clamp(2rem, 5vw, 4rem);
-    margin-top: clamp(2.5rem, 5vw, 3.75rem);
+    max-width: 520px;
+    margin-top: clamp(2.75rem, 6vw, 4.5rem);
   }
 
   .site-footer {
@@ -592,21 +567,15 @@ h2 {
   }
 
   .coming-soon {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.85rem;
     margin-top: 2.25rem;
     padding-top: 1.25rem;
   }
 
-  .coming-soon .status-label {
-    margin: 0;
+  .coming-soon h2 {
+    font-size: clamp(2rem, 8vw, 2.55rem);
   }
 
-  .coming-soon-copy h2 {
-    font-size: clamp(1.7rem, 7vw, 2.2rem);
-  }
-
-  .coming-soon-copy p {
+  .coming-soon > p {
     font-size: 0.92rem;
     line-height: 1.65;
   }
