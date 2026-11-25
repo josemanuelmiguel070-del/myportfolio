@@ -263,9 +263,10 @@ h1 {
 
 .coming-soon {
   max-width: 630px;
-  margin-top: clamp(3.5rem, 8vw, 6rem);
+  margin: clamp(3.5rem, 8vw, 6rem) auto 0;
   padding-top: 1.75rem;
   border-top: 1px solid var(--color-border);
+  text-align: center;
   animation: arrive 700ms 100ms ease-out both;
 }
 
@@ -301,7 +302,7 @@ h2 {
 
 .coming-soon h2 {
   max-width: 14ch;
-  margin-bottom: 0.9rem;
+  margin: 0 auto 0.9rem;
   font-size: clamp(2.2rem, 4.6vw, 3.2rem);
   letter-spacing: -0.055em;
   line-height: 1.08;
@@ -309,7 +310,7 @@ h2 {
 
 .coming-soon > p {
   max-width: 38rem;
-  margin-bottom: 0;
+  margin: 0 auto;
   color: var(--color-muted);
   font-size: 0.98rem;
   line-height: 1.8;
