@@ -606,7 +606,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  margin-top: 1.8rem;
+  margin-top: 3rem;
   text-align: center;
   animation: arrive 700ms 180ms ease-out both;
 }
@@ -945,7 +945,7 @@ h2 {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     gap: 0.75rem;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
   }
 
   .social-link {
