@@ -43,3 +43,14 @@ document.querySelectorAll("[data-profile-link]").forEach((link) => {
     });
   }
 });
+
+const certificateButton = document.querySelector(".certificate-button");
+const certificateNotice = document.querySelector("#certificate-notice");
+
+if (certificateButton && certificateNotice) {
+  certificateButton.addEventListener("click", () => {
+    const isExpanded = certificateButton.getAttribute("aria-expanded") === "true";
+    certificateButton.setAttribute("aria-expanded", String(!isExpanded));
+    certificateNotice.hidden = isExpanded;
+  });
+}
