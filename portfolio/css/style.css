@@ -552,7 +552,7 @@ h2 {
 
   .introduction {
     grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
+    gap: 1.15rem;
   }
 
   .portrait-frame {
@@ -562,7 +562,11 @@ h2 {
   }
 
   .introduction-copy {
+    width: 100%;
+    max-width: 34rem;
+    margin-inline: auto;
     padding-block: 0;
+    text-align: left;
   }
 
   .eyebrow {
@@ -575,20 +579,23 @@ h2 {
 
   h1 {
     margin-bottom: 0;
-    font-size: clamp(2.75rem, 13vw, 3.5rem);
-    line-height: 1;
+    font-size: clamp(2.45rem, 10.5vw, 3.15rem);
+    line-height: 1.04;
+    letter-spacing: -0.065em;
   }
 
   .role {
     max-width: 19rem;
-    margin-top: 0.65em;
+    margin-top: 0.55em;
+    font-size: 0.29em;
+    line-height: 1.45;
   }
 
   .intro-summary {
     max-width: 32rem;
-    margin-top: 1rem;
-    font-size: 0.92rem;
-    line-height: 1.65;
+    margin-top: 0.85rem;
+    font-size: 0.91rem;
+    line-height: 1.7;
   }
 
   .coming-soon {
@@ -650,7 +657,7 @@ h2 {
   }
 
   h1 {
-    font-size: 2.75rem;
+    font-size: clamp(2.35rem, 10.5vw, 2.75rem);
   }
 
   .eyebrow {
