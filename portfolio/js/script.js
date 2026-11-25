@@ -54,3 +54,43 @@ if (certificateButton && certificateNotice) {
     certificateNotice.hidden = isExpanded;
   });
 }
+
+
+const contactForm = document.querySelector("#form");
+const contactStatus = document.querySelector("#contact-status");
+
+if (contactForm && contactStatus) {
+  const contactSubmit = contactForm.querySelector('button[type="submit"]');
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const originalText = contactSubmit.textContent;
+    contactSubmit.textContent = "A enviar...";
+    contactSubmit.disabled = true;
+    contactStatus.textContent = "";
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: new FormData(contactForm),
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        contactStatus.textContent = "Mensagem enviada com sucesso. Obrigado pelo contacto.";
+        contactStatus.dataset.state = "success";
+        contactForm.reset();
+      } else {
+        throw new Error(result.message || "Não foi possível enviar a mensagem.");
+      }
+    } catch (error) {
+      contactStatus.textContent = error.message || "Ocorreu um erro. Tente novamente.";
+      contactStatus.dataset.state = "error";
+    } finally {
+      contactSubmit.textContent = originalText;
+      contactSubmit.disabled = false;
+    }
+  });
+}
