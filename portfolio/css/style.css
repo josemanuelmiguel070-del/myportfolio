@@ -84,6 +84,7 @@ a {
 .cv-button {
   display: inline-flex;
   min-height: 2.75rem;
+  animation: cv-attention 4.8s ease-in-out 1.2s infinite;
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
@@ -115,9 +116,18 @@ a {
 }
 
 .cv-button:hover {
+  animation-play-state: paused;
   transform: translateY(-2px);
   border-color: #D4D4D8;
   background: #D4D4D8;
+}
+
+.cv-button:hover svg {
+  transform: translateY(2px);
+}
+
+.cv-button svg {
+  transition: transform 180ms ease;
 }
 
 .cv-button:focus-visible {
@@ -421,6 +431,18 @@ h2 {
 
   50% {
     opacity: 1;
+  }
+}
+
+@keyframes cv-attention {
+  0%,
+  86%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(245 245 245 / 0%);
+  }
+
+  92% {
+    box-shadow: 0 0 0 5px rgb(245 245 245 / 10%);
   }
 }
 
