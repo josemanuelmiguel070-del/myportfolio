@@ -630,32 +630,37 @@ h2 {
 
   .eyebrow {
     max-width: 21rem;
-    margin-inline: auto;
-    margin-bottom: 0.75rem;
-    font-size: 0.64rem;
-    letter-spacing: 0.1em;
-    line-height: 1.55;
+    margin: 0 auto 0.7rem;
+    font-size: 0.61rem;
+    letter-spacing: 0.11em;
+    line-height: 1.5;
   }
 
   h1 {
     margin-bottom: 0;
-    font-size: clamp(2.45rem, 10.5vw, 3.15rem);
-    line-height: 1.04;
-    letter-spacing: -0.065em;
+    font-size: clamp(2.25rem, 9.2vw, 2.9rem);
+    line-height: 1.06;
+    letter-spacing: -0.06em;
   }
 
-  .role {
-    max-width: 19rem;
-    margin-top: 0.55em;
-    font-size: 0.29em;
-    line-height: 1.45;
+  .professional-heading {
+    max-width: 25rem;
+    margin: 0.8rem auto 0;
+    color: var(--color-text);
+    font-size: 0.84rem;
+    font-weight: 500;
+    line-height: 1.55;
+    text-align: center;
   }
 
   .intro-summary {
     max-width: 32rem;
-    margin: 0.85rem auto 0;
-    font-size: 0.91rem;
+    margin: 0.9rem auto 0;
+    font-size: 0.89rem;
     line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
   }
 
   .projects-section {
@@ -746,7 +751,16 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(2.35rem, 10.5vw, 2.75rem);
+    font-size: clamp(2.2rem, 9.8vw, 2.55rem);
+  }
+
+  .professional-heading {
+    font-size: 0.8rem;
+  }
+
+  .intro-summary {
+    font-size: 0.87rem;
+    line-height: 1.68;
   }
 
   .eyebrow {
