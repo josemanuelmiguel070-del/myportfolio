@@ -574,7 +574,7 @@ h2 {
   }
 
   .coming-soon h2 {
-    font-size: clamp(2rem, 8vw, 2.55rem);
+    font-size: clamp(1.55rem, 6vw, 1.85rem);
   }
 
   .coming-soon > p {
