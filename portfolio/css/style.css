@@ -330,7 +330,85 @@ h1 {
   line-height: 1.7;
 }
 
- .coming-soon {
+ 
+/* Separação e apresentação da formação académica */
+.education-section {
+  width: 100%;
+  margin: clamp(4rem, 7vw, 5.5rem) auto 0;
+  padding-top: clamp(2rem, 4vw, 2.75rem);
+  border-top: 1px solid var(--color-border);
+}
+
+.education-heading { margin-bottom: 1.5rem; }
+
+.education-heading h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.4vw, 2.45rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+}
+
+.education-card {
+  min-width: 0;
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  border: 1px solid var(--color-border);
+  background: rgb(48 48 52 / 12%);
+}
+
+.education-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-bottom: 1.15rem;
+}
+
+.education-card__category {
+  color: var(--color-muted);
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+}
+
+.education-status {
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.66rem;
+  line-height: 1.25;
+}
+
+.education-status--completed { color: var(--color-text); }
+
+.education-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.education-institution,
+.education-period {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.education-period { margin-top: 0.4rem; font-size: 0.78rem; }
+
+.coming-soon {
   max-width: 590px;
   margin: clamp(3rem, 6vw, 4.5rem) auto 0;
   padding-top: 1.5rem;
@@ -691,6 +769,26 @@ h2 {
     font-size: 0.84rem;
     line-height: 1.65;
   }
+
+  .education-section {
+    margin-top: 3rem;
+    padding-top: 1.65rem;
+  }
+
+  .education-heading {
+    margin-bottom: 1.1rem;
+    text-align: center;
+  }
+
+  .education-list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .education-card { padding: 1.2rem; }
+  .education-card__top { margin-bottom: 0.9rem; }
+  .education-card h3 { font-size: 1rem; }
+  .education-institution { font-size: 0.83rem; }
 
   .coming-soon {
     margin-top: 2.25rem;
